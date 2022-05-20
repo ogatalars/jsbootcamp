@@ -5,3 +5,7 @@ let students = ["Ricardo", "Maria", "João", "Pedro"];
 let colors = ["red", "blue", "green"];
 let lottoNumeros = [1, 2, 3, 4, 5, 6];
 let stuff = [1, "string", true, null, undefined, {}, []];
+
+// array literal
+new Array();
+new Array(1, 2, 3, 4, 5, 6, 7, 8); // cria um array tbm
