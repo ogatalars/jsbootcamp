@@ -1,0 +1,14 @@
+h1 {
+  color: blue;
+  font-size: 2em;
+}
+
+.first {
+  color: red;
+}
+#second {
+  color: green;
+}
+.notSpecial {
+  font-size: 1.5em;
+}
