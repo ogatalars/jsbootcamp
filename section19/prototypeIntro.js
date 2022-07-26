@@ -4,3 +4,22 @@
 // Bem, para ser exato, as propriedades e os métodos são definidos na propriedade prototype nas funções construtoras dos Objetos, não nas próprias instâncias do objeto.
 
 // Em JavaScript, é feito um link entre a instância do objeto e seu protótipo (sua propriedade  __proto__, que é derivada da propriedade prototype no construtor), e as propriedades e os métodos são encontrados percorrendo a cadeia de protótipos.
+
+String.prototype.grumpus = () => {
+  alert("Go AWAY");
+};
+
+const cat = "BLUE ";
+cat.grumpus();
+String.prototype.yell = function () {
+  console.log(this);
+};
+
+"hello".yell(); // "hello" refere to this in the function
+
+Array.prototype.pop = function () {
+  return "Sorry, i want that element";
+};
+
+const dog = "Izzy";
+dog._proto_.pop(); // "Sorry, i want that element"
